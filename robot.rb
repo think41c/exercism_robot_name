@@ -1,5 +1,7 @@
 class Robot
 
+  attr_reader :name
+
   def initialize 
     first_letter  = (65 + rand(26)).chr
     second_letter = (65 + rand(26)).chr
@@ -9,11 +11,8 @@ class Robot
     @name = "#{first_letter}#{second_letter}#{first_num}#{second_num}#{third_num}"
   end
 
-  def name 
-    @name
-  end
-
   def reset
+    @name 
   end
 
 end
