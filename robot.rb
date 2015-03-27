@@ -12,7 +12,7 @@ class Robot
   end
 
   def reset
-    @name 
+    @name = Robot.new.name
   end
 
 end

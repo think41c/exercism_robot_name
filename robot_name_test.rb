@@ -26,11 +26,9 @@ class RobotTest < Minitest::Test
     name = robot.name
     robot.reset
     name2 = robot.name
-    # require 'pry'
-    # binding.pry
-    # assert name != name2
+    assert name != name2
     # rubocop:disable Lint/AmbiguousRegexpLiteral
-    # assert_match /^[A-Z]{2}\d{3}$/, name2
+    assert_match /^[A-Z]{2}\d{3}$/, name2
     # rubocop:enable Lint/AmbiguousRegexpLiteral
   end
 end
