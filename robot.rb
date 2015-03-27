@@ -6,11 +6,11 @@ class Robot
     first_num     = rand(10)
     second_num    = rand(10)
     third_num     = rand(10)
-    puts "#{first_letter}#{second_letter}#{first_num}#{second_num}#{third_num}"
+    @name = "#{first_letter}#{second_letter}#{first_num}#{second_num}#{third_num}"
   end
 
   def name 
-    "RX123"
+    @name
   end
 
   def reset
