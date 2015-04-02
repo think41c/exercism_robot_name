@@ -12,9 +12,11 @@ class Robot
 
   def create_name
     letter  = ('AA'..'ZZ').to_a.sample
-    number  = rand(1000)
+    number  = rand(100..1000)
     
     @name = "#{letter}#{number}"
   end
 
 end
+
+Robot
