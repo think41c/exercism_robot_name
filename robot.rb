@@ -19,4 +19,3 @@ class Robot
 
 end
 
-Robot
